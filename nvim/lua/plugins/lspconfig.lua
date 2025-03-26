@@ -4,6 +4,7 @@ return {
         local lspconfig = require("lspconfig")
         lspconfig.lua_ls.setup({})
         lspconfig.rust_analyzer.setup({})
+        lspconfig.clangd.setup({})
         vim.api.nvim_create_autocmd('LspAttach', {
             desc = 'LSP actions',
             callback = function(event)

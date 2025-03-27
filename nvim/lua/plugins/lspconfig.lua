@@ -6,6 +6,7 @@ return {
         lspconfig.rust_analyzer.setup({})
         lspconfig.clangd.setup({})
         lspconfig.gopls.setup({})
+        lspconfig.ts_ls.setup({})
         vim.api.nvim_create_autocmd('LspAttach', {
             desc = 'LSP actions',
             callback = function(event)

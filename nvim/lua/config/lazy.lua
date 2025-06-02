@@ -26,7 +26,7 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.autoindent = true
-
+vim.o.winborder = "rounded"
 -- Setup lazy.nvim
 require("lazy").setup("plugins")
 

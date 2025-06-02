@@ -11,13 +11,6 @@ return {
         lspconfig.ts_ls.setup({})
         lspconfig.html.setup({capabilities = capabilities})
         lspconfig.cssls.setup({capabilities = capabilities})
-        lspconfig.jdtls.setup({})
-        vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, {
-            border = 'single'
-        })
-        vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { 
-            border = 'single'
-        })
         vim.api.nvim_create_autocmd('LspAttach', {
             desc = 'LSP actions',
             callback = function(event)

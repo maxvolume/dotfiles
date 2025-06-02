@@ -11,6 +11,7 @@ return {
         lspconfig.ts_ls.setup({})
         lspconfig.html.setup({capabilities = capabilities})
         lspconfig.cssls.setup({capabilities = capabilities})
+        lspconfig.jdtls.setup({})
         vim.api.nvim_create_autocmd('LspAttach', {
             desc = 'LSP actions',
             callback = function(event)

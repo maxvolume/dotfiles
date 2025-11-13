@@ -9,9 +9,10 @@ return {
         lspconfig.clangd.setup({})
         lspconfig.gopls.setup({})
         lspconfig.ts_ls.setup({})
-        lspconfig.html.setup({capabilities = capabilities})
+        lspconfig.html.setup({capabilities = capabilities, filetypes = {"html", "templ"}})
         lspconfig.cssls.setup({capabilities = capabilities})
         lspconfig.jdtls.setup({})
+        lspconfig.templ.setup({})
         vim.api.nvim_create_autocmd('LspAttach', {
             desc = 'LSP actions',
             callback = function(event)

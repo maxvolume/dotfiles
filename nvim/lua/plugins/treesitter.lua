@@ -16,7 +16,8 @@ return {
             "rust",
             "python",
             "go",
-            "markdown"
+            "markdown",
+            "templ"
         },
         autotag = {
             enable = false,

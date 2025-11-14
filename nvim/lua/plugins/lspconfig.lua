@@ -39,5 +39,11 @@ return {
                 vim.keymap.set('n', '<leader>la', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
            end
         })
+        vim.api.nvim_create_autocmd('FileType', {
+            pattern = 'templ',
+            callback = function()
+                vim.treesitter.start()
+            end
+        })
     end
 }
